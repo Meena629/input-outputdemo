@@ -1,0 +1,17 @@
+<form #CustData="ngForm" (ngSubmit)="onSubmit(CustData)">
+    <label>CustomerId: </label>
+    <br>
+    <input type="number" id="custId" name="custId" ngModel />
+    <br>
+    <label>CustomerName: </label>
+    <br/>
+    <input type="text" id="custName" name="custName" ngModel />
+    <br/>
+    <label>CustomerCity: </label>
+    <br/>
+    <input type="text" id="city" name="city" ngModel />
+    <br/>
+    <input type="submit" id="btnSubmit" value="click" />
+    
+    </form>
+    <app-customer-list [custdata]="c" > </app-customer-list>

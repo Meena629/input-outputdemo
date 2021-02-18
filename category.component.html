@@ -1,0 +1,10 @@
+<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+    <input type="text" id="catId" name="catId" ngModel />
+    <br>
+    <input type="text" id="catName" name="catName" ngModel />
+    <br>
+    <input type="text" id="description" name="description" ngModel />
+    <br>
+    <input type="submit" id="btnSubmit" value="Submit"/>
+</form>
+<app-category-list [Id]="catId" [Name]="catName" [Description]="description"></app-category-list>

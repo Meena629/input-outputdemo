@@ -1,0 +1,13 @@
+<h1>{{custdata.custId}}</h1>
+<h1>{{custdata.custName}}</h1>
+<h1>{{custdata.city}}</h1>
+<form>
+<input type="number" value="{{custdata.custId}}" name="custId" />
+<br>
+<input type="text" value="{{custdata.custName}}" name="custName" />
+<br>
+<input type="text" value="{{custdata.city}}" name="city" />
+<br>
+<input type="submit" id="btnSubmit" value="click" (click)="show()" />
+
+</form> 
